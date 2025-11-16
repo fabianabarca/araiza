@@ -1,27 +1,27 @@
 seo:
-  title: Nuxt Landing Template
-  description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: AI-Powered Developer Productivity Platform
-description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
+  title: Administraciones Araiza
+  description: Empresa especializada en la administración de condominios.
+title: Nosotros [resolvemos]{class="text-primary"}.
+description: Olvídate de los problemas con los expertos en bienes raíces a tu lado.
 hero:
   links:
-    - label: Get started
+    - label: Contáctanos
       icon: i-lucide-arrow-right
       trailing: true
       color: primary
       to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
       target: _blank
       size: xl
-    - label: Clone on GitHub
-      icon: i-simple-icons-github
+    - label: Conoce más
+      icon: i-simple-icons-facebook
       size: xl
       color: neutral
       variant: outline
       to: https://github.com/nuxt-ui-templates/landing
       target: _blank
 section:
-  title: '[Revolutionize]{.text-primary} your coding experience'
-  description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
+  title: 'Nos distinguimos por el [profesionalismo]{.text-primary}'
+  description: Somos una empresa especializada en la administración de condominios que se distingue por su trato personalizado, ética, responsabilidad, transparencia y, sobre todo, por ofrecer un servicio con los más altos estándares profesionales.
   images:
     mobile: '/images/macbook-mobile.svg'
     desktop: '/images/macbook.svg'
@@ -36,54 +36,54 @@ section:
       description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
       class: border-l border-default pt-4 pl-4
 features:
-  title: Take control of your [productivity]{.text-primary}
-  description: Make every coding session count with smart analytics and workflow optimization.
+  title: Servicios [legales]{.text-primary}
+  description: Asesoría y representación jurídica. Revisión y firma de contratos. Supervisión de cumplimiento de la normativa y mucho más.
   features:
-    - title: AI-Powered Focus Tracking
-      description: Discover your optimal coding hours with real-time AI analysis of your productivity patterns.
-      icon: i-lucide-wand-sparkles
+    - title: Asesoría y representación jurídica
+      description: Brindamos asesoría legal preventiva en asuntos relacionados con el condominio.
+      icon: i-lucide-scale
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Distraction Alerts
-      description: Get notified when your focus drifts and bring your attention back.
+    - title: Revisión y firma de contratos
+      description: Aplicamos medidas reglamentarias del condominio y las sanciones correspondientes.
       icon: i-lucide-bell-ring
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Smart Code Snippets
-      description: Save and reuse frequently used code blocks for efficiency.
+    - title: Supervisión de la normativa
+      description: Recomendamos los mejores especialistas y le damos seguimiento directo al juicio.
       icon: i-lucide-code-xml
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Deep Work Mode
-      description: Block distractions and set structured coding sessions with built-in Pomodoro timers.
-      icon: i-lucide-moon
+    - title: Conciliación interna
+      description: Propiciamos un diálogo eficiente y soluciones en beneficio del condominio.
+      icon: i-lucide-handshake
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Collaborative Insights
-      description: Sync your workflow with teammates and see when they are most productive.
-      icon: i-lucide-mouse-pointer-2
+    - title: Aplicación de sanciones
+      description: Aplicamos medidas reglamentarias del condominio y las sanciones correspondientes.
+      icon: i-lucide-bell-ring
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Performance Analytics
-      description: Track your coding metrics and get insights to boost your speed and code quality.
-      icon: i-lucide-chart-line
+    - title: Demanda en tribunales
+      description: Recomendamos los servicios de los mejores especialistas y le damos seguimiento directo al juicio.
+      icon: i-lucide-code-xml
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 steps:
-  title: Start coding smarter in [3 steps]{.text-primary}
-  description: Transform your development workflow with our AI-powered assistant.
+  title: Administración eficiente en [tres pasos]{.text-primary}
+  description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
   items:
-    - title: Connect Your IDE
+    - title: Diagnóstico
       description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
       image:
         light: '/images/light/connect.svg'
         dark: '/images/dark/connect.svg'
-    - title: Track & Analyze
+    - title: Ejecución
       description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
       image:
         light: '/images/light/optimize.svg'
         dark: '/images/dark/optimize.svg'
-    - title: Optimize & Code Smarter
+    - title: Evaluación
       description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
       image:
         light: '/images/light/track.svg'
@@ -147,7 +147,7 @@ testimonials:
         avatar:
           src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
 cta:
-  title: Ready to build an amazing landing page?
+  title: Contáctanos, estamos para servirte.
   description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
   links:
     - label: Start building
