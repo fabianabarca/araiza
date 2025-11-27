@@ -3,28 +3,34 @@ const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
-  label: 'Servicios',
-  to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
+  label: 'Mantenimiento',
+  to: '#maintenance',
+  active: activeHeadings.value.includes('maintenance')
 }, {
-  label: 'Clientes',
-  to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
+  label: 'Legal',
+  to: '#legal',
+  active: activeHeadings.value.includes('legal')
 }, {
-  label: 'Respaldo',
-  to: '#pricing',
-  active: activeHeadings.value.includes('pricing')
+  label: 'Contabilidad',
+  to: '#accounting',
+  active: activeHeadings.value.includes('accounting')
 }, {
   label: 'Quiénes somos',
-  to: '#features',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
+  to: '#testimonials',
+  active: activeHeadings.value.includes('testimonials')
+}, {
+  label: 'Contacto',
+  to: '#cta',
+  active: activeHeadings.value.includes('cta')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#pricing'),
-    document.querySelector('#testimonials')
+    document.querySelector('#maintenance'),
+    document.querySelector('#legal'),
+    document.querySelector('#accounting'),
+    document.querySelector('#testimonials'),
+    document.querySelector('#cta')
   ].filter(Boolean) as Element[])
 })
 </script>
@@ -36,19 +42,12 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         <AppLogo class="w-auto h-6 shrink-0" />
       </NuxtLink>
 
-      <TemplateMenu />
     </template>
 
     <template #right>
       <UNavigationMenu
         :items="items"
         variant="link"
-        class="hidden lg:block"
-      />
-
-      <UButton
-        label="Download App"
-        variant="subtle"
         class="hidden lg:block"
       />
 

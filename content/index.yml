@@ -6,54 +6,71 @@ description: Olvídate de los problemas con los expertos en bienes raíces a tu 
 hero:
   links:
     - label: Contáctanos
-      icon: i-lucide-arrow-right
+      icon: i-lucide-arrow-down
       trailing: true
       color: primary
-      to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
-      target: _blank
+      to: '#cta'
       size: xl
     - label: Conoce más
-      icon: i-simple-icons-facebook
+      icon: i-simple-icons-linkedin
       size: xl
       color: neutral
       variant: outline
-      to: https://github.com/nuxt-ui-templates/landing
+      to: https://www.linkedin.com/company/administraciones-araiza/about/
       target: _blank
 section:
   title: 'Nos distinguimos por el [profesionalismo]{.text-primary}'
   description: Somos una empresa especializada en la administración de condominios que se distingue por su trato personalizado, ética, responsabilidad, transparencia y, sobre todo, por ofrecer un servicio con los más altos estándares profesionales.
   images:
-    mobile: '/images/macbook-mobile.svg'
-    desktop: '/images/macbook.svg'
+    mobile: '/images/building.jpg'
+    desktop: '/images/building.jpg'
   features:
-    - title: Optimize your focus time
-      description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
+    - title: Respaldo
+      description: Nos avalan todas las certificaciones de la Procuraduría Social (PROSOC). Pertenecemos a la Asociación Mexicana de Profesionales Inmobiliarios (AMPI). Contamos con cédulas profesionales jurídicas para ofrecer la mejor asesoría legal sin un costo adicional.
       class: border-l border-primary pl-4
-    - title: Track your best coding hours
-      description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
+    - title: Experiencia
+      description: En la Ciudad de México administramos una docena de condominios de vivienda y de uso mixto, con distintos números de unidades privativas, en las colonias Cuauhtémoc, Condesa, Coyoacán, San Jerónimo, Del Valle, Olivar de lo Padres, entre otras.
       class: border-l border-default pt-4 pl-4
-    - title: Improve workflow efficiency
-      description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
+    - title: Diversidad
+      description: Administramos inmuebles con diversos giros comerciales, como Torre Canoa 521 en San Ángel con 12 pisos de oficinas o el Centro Comercial del Puente en Tecamachalco, con más de 50 locales.
       class: border-l border-default pt-4 pl-4
-features:
-  title: Servicios [legales]{.text-primary}
-  description: Asesoría y representación jurídica. Revisión y firma de contratos. Supervisión de cumplimiento de la normativa y mucho más.
+steps:
+  title: Administración eficiente en [tres pasos]{.text-primary}
+  description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
+  items:
+    - title: Diagnóstico
+      description: Plan de organización anual y planes estratégicos.
+      image:
+        light: '/images/light/diagnostico.jpg'
+        dark: '/images/light/diagnostico.jpg'
+    - title: Ejecución
+      description: Rendición de cuentas a través de estados de resultados y matriz de cumplimiento mensual.
+      image:
+        light: '/images/light/ejecucion.jpg'
+        dark: '/images/light/ejecucion.jpg'
+    - title: Evaluación
+      description: Transparencia total y garantías en la calidad del servicio.
+      image:
+        light: '/images/light/evaluacion.jpg'
+        dark: '/images/light/evaluacion.jpg'
+maintenance:
+  title: Servicios de [mantenimiento y operación]{.text-primary}
+  description: Contamos con el respaldo de empresas profesionales con la experiencia necesaria para afrontar las necesidades de nuestros clientes.
   features:
-    - title: Asesoría y representación jurídica
-      description: Brindamos asesoría legal preventiva en asuntos relacionados con el condominio.
-      icon: i-lucide-scale
+    - title: Trabajo conjunto
+      description: Hacemos alianza con las empresas que brindan eficientemente sus servicios a nuestros clientes y respetamos sus compromisos laborales.
+      icon: i-lucide-handshake
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Revisión y firma de contratos
-      description: Aplicamos medidas reglamentarias del condominio y las sanciones correspondientes.
-      icon: i-lucide-bell-ring
+    - title: Supervisión constante
+      description: Nuestra supervisión es permanente y presencial, tanto del trabajo desempeñado por proveedores como por el efectuado por nuestro personal.
+      icon: i-lucide-list-checks
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Supervisión de la normativa
-      description: Recomendamos los mejores especialistas y le damos seguimiento directo al juicio.
-      icon: i-lucide-code-xml
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+legal:
+  title: Servicios [legales]{.text-primary}
+  description: Asesoría y representación jurídica. Revisión y firma de contratos. Damos seguimiento a todas las gestiones notariales necesarias. Supervisión de cumplimiento de la normativa y mucho más. Todas nuestras acciones están apegadas a la ley y son previamente acordadas por los condóminos.
+  features:
     - title: Conciliación interna
       description: Propiciamos un diálogo eficiente y soluciones en beneficio del condominio.
       icon: i-lucide-handshake
@@ -61,33 +78,33 @@ features:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Aplicación de sanciones
       description: Aplicamos medidas reglamentarias del condominio y las sanciones correspondientes.
-      icon: i-lucide-bell-ring
+      icon: i-lucide-book-lock
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
     - title: Demanda en tribunales
-      description: Recomendamos los servicios de los mejores especialistas y le damos seguimiento directo al juicio.
-      icon: i-lucide-code-xml
+      description: Recomendamos a los mejores especialistas y le damos seguimiento directo al juicio.
+      icon: i-lucide-scale
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-steps:
-  title: Administración eficiente en [tres pasos]{.text-primary}
-  description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
-  items:
-    - title: Diagnóstico
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
-      image:
-        light: '/images/light/connect.svg'
-        dark: '/images/dark/connect.svg'
-    - title: Ejecución
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
-      image:
-        light: '/images/light/optimize.svg'
-        dark: '/images/dark/optimize.svg'
-    - title: Evaluación
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
-      image:
-        light: '/images/light/track.svg'
-        dark: '/images/dark/track.svg'
+accounting:
+  title: Servicios [contables]{.text-primary}
+  description: Nuestro departamento de contabilidad ofrece sus servicios con la mejor calidad del mercado. Todos nuestros servicios de contabilidad cuentan con garantía de cumplimiento para ofrecer la mayor seguridad fiscal a nuestros clientes.
+  features:
+    - title: Gestiones ante el SAT
+      description: Realizamos todas las gestiones necesarias ante el SAT para mantener al día las obligaciones fiscales del condominio.
+      icon: i-lucide-building
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Facturación y declaraciones fiscales
+      description: Nos encargamos de la facturación y presentación de declaraciones fiscales del condominio, asegurando el cumplimiento de todas las obligaciones tributarias.
+      icon: i-lucide-files
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Pago de impuestos
+      description: Realizamos el pago de impuestos del condominio de manera oportuna y conforme a la normativa vigente.
+      icon: i-lucide-hand-coins
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 pricing:
   title: Choose your [productivity]{.text-primary} path
   description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
@@ -122,40 +139,45 @@ pricing:
         variant: subtle
         to: '#'
 testimonials:
-  title: Join thousands of productive [developers]{.text-primary}
-  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  title: Quiénes [somos]{.text-primary}
+  description: Contamos con un equipo de profesionistas y profesionales con amplia experiencia en el ramo.
   items:
-    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
+    - quote: Los más de 35 años de experiencia de Emilia en el sector administrativo y legal han permitido la consolidación de Administraciones Araiza como una empresa referente en el mercado.
       user:
-        name: 'Sarah Moriceau'
-        description: 'Brand Designer'
+        name: 'Emilia Araiza'
+        description: 'Socia fundadora'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
-    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
+          src: '/images/emilia.jpg'
+    - quote: 'Los conocimientos jurídicos y tecnológicos de Pablo han ayudado a consolidar la compañía con una visión de vanguardia.'
       user:
-        name: 'Sébastien Chopin'
-        description:  'Lead Software Engineer'
+        name: 'Pablo Berthely'
+        description:  'Socio'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+          src: '/images/pablo.png'
     - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
       user:
-        name: 'Benjamin Canac'
-        description:  'Senior Frontend Developer'
+        name: 'Sofía Abarca'
+        description:  'Colaboradora'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+          src: '/images/sofia.jpeg'
 cta:
   title: Contáctanos, estamos para servirte.
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+  description: Nos preocupamos por proteger en todo momento tus datos personales. Si lo deseas puedes consultar nuestro aviso de privacidad.
   links:
-    - label: Start building
-      to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt'
+    - label: "(+52) 55 2935 7345"
+      to: 'tel:+525529357345'
       target: _blank
-      trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
-      to: 'https://github.com/nuxt-ui-templates/landing'
+      icon: i-lucide-phone
+    - label: "(+52) 55 1834 5558"
+      to: 'tel:+525518345558'
       target: _blank
       variant: subtle
-      icon: i-simple-icons-github
+      icon: i-lucide-phone
+    - label: info@administracionesaraiza.com.mx
+      to: 'mailto:info@administracionesaraiza.com.mx'
+      target: _blank
+      variant: subtle
+      icon: i-lucide-mail

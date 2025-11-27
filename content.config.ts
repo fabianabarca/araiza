@@ -45,7 +45,13 @@ export const collections = {
           })
         )
       }),
-      features: createBaseSchema().extend({
+      maintenance: createBaseSchema().extend({
+        features: z.array(createFeatureSchema())
+      }),
+      legal: createBaseSchema().extend({
+        features: z.array(createFeatureSchema())
+      }),
+      accounting: createBaseSchema().extend({
         features: z.array(createFeatureSchema())
       }),
       steps: createBaseSchema().extend({

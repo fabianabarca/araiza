@@ -45,6 +45,7 @@ useSeoMeta({
       </template>
     </UPageHero>
 
+    <!-- Section -->
     <UPageSection
       :description="page.section.description"
       :features="page.section.features"
@@ -75,35 +76,7 @@ useSeoMeta({
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
-    <UPageSection
-      id="features"
-      :description="page.features.description"
-      :features="page.features.features"
-      :ui="{
-        title: 'text-left @container relative flex',
-        description: 'text-left'
-      }"
-      class="relative overflow-hidden"
-    >
-      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
-      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
-      <template #title>
-        <MDC
-          :value="page.features.title"
-          class="*:leading-9"
-        />
-        <div class="hidden @min-[1020px]:block">
-          <UColorModeImage
-            light="/images/light/line-2.svg"
-            dark="/images/dark/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
-          />
-        </div>
-      </template>
-    </UPageSection>
-
-    <USeparator :ui="{ border: 'border-primary/30' }" />
-
+    <!-- Steps Section -->
     <UPageSection
       id="steps"
       :description="page.steps.description"
@@ -147,44 +120,93 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <UPageSection
-      id="pricing"
-      class="mb-32 overflow-hidden"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :plans="page.pricing.plans"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
-    >
-      <template #title>
-        <MDC :value="page.pricing.title" />
+    <USeparator :ui="{ border: 'border-primary/30' }" />
 
-        <div class="hidden @min-[1120px]:block">
+    <!-- Mantenimiento y operación -->
+    <UPageSection
+      id="maintenance"
+      :description="page.maintenance.description"
+      :features="page.maintenance.features"
+      :ui="{
+        title: 'text-left @container relative flex',
+        description: 'text-left'
+      }"
+      class="relative overflow-hidden"
+    >
+      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <template #title>
+        <MDC
+          :value="page.maintenance.title"
+          class="*:leading-9"
+        />
+        <div class="hidden @min-[1020px]:block">
           <UColorModeImage
-            light="/images/light/line-4.svg"
-            dark="/images/dark/line-4.svg"
-            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
+            light="/images/light/line-2.svg"
+            dark="/images/dark/line-2.svg"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
           />
         </div>
       </template>
-
-      <UPricingPlans scale>
-        <UPricingPlan
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          :title="plan.title"
-          :description="plan.description"
-          :price="plan.price"
-          :billing-period="plan.billing_period"
-          :billing-cycle="plan.billing_cycle"
-          :highlight="plan.highlight"
-          :scale="plan.highlight"
-          variant="soft"
-          :features="plan.features"
-          :button="plan.button"
-        />
-      </UPricingPlans>
     </UPageSection>
 
+    <!-- Servicios legales -->
+    <UPageSection
+      id="legal"
+      :description="page.legal.description"
+      :features="page.legal.features"
+      :ui="{
+        title: 'text-left @container relative flex',
+        description: 'text-left'
+      }"
+      class="relative overflow-hidden"
+    >
+      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <template #title>
+        <MDC
+          :value="page.legal.title"
+          class="*:leading-9"
+        />
+        <div class="hidden @min-[1020px]:block">
+          <UColorModeImage
+            light="/images/light/line-2.svg"
+            dark="/images/dark/line-2.svg"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
+          />
+        </div>
+      </template>
+    </UPageSection>
+
+    <!-- Servicios contables -->
+    <UPageSection
+      id="accounting"
+      :description="page.accounting.description"
+      :features="page.accounting.features"
+      :ui="{
+        title: 'text-left @container relative flex',
+        description: 'text-left'
+      }"
+      class="relative overflow-hidden"
+    >
+      <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
+      <template #title>
+        <MDC
+          :value="page.accounting.title"
+          class="*:leading-9"
+        />
+        <div class="hidden @min-[1020px]:block">
+          <UColorModeImage
+            light="/images/light/line-2.svg"
+            dark="/images/dark/line-2.svg"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
+          />
+        </div>
+      </template>
+    </UPageSection>
+
+    <!-- Quiénes somos -->
     <UPageSection
       id="testimonials"
       :title="page.testimonials.title"
@@ -209,7 +231,7 @@ useSeoMeta({
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
-            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
+            :ui="{ description: '' }"
           >
             <template #footer>
               <UUser
@@ -224,6 +246,7 @@ useSeoMeta({
 
     <USeparator />
 
+    <!-- Contáctanos -->
     <UPageCTA
       v-bind="page.cta"
       variant="naked"
