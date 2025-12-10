@@ -31,9 +31,6 @@ section:
     - title: Experiencia
       description: En la Ciudad de México administramos una docena de condominios de vivienda y de uso mixto, con distintos números de unidades privativas, en las colonias Cuauhtémoc, Condesa, Coyoacán, San Jerónimo, Del Valle, Olivar de lo Padres, entre otras.
       class: border-l border-default pt-4 pl-4
-    - title: Diversidad
-      description: Administramos inmuebles con diversos giros comerciales, como Torre Canoa 521 en San Ángel con 12 pisos de oficinas o el Centro Comercial del Puente en Tecamachalco, con más de 50 locales.
-      class: border-l border-default pt-4 pl-4
 steps:
   title: Administración eficiente en [tres pasos]{.text-primary}
   description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
@@ -79,11 +76,6 @@ agency:
     - title: Aplicación de sanciones
       description: Aplicamos medidas reglamentarias del condominio y las sanciones correspondientes.
       icon: i-lucide-book-lock
-      ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
-    - title: Demanda en tribunales
-      description: Recomendamos a los mejores especialistas y le damos seguimiento directo al juicio.
-      icon: i-lucide-scale
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
 consultancy:
