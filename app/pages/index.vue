@@ -122,11 +122,11 @@ useSeoMeta({
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
-    <!-- Mantenimiento y operación -->
+    <!-- Administración -->
     <UPageSection
-      id="maintenance"
-      :description="page.maintenance.description"
-      :features="page.maintenance.features"
+      id="administracion"
+      :description="page.administration.description"
+      :features="page.administration.features"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left'
@@ -137,7 +137,7 @@ useSeoMeta({
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
-          :value="page.maintenance.title"
+          :value="page.administration.title"
           class="*:leading-9"
         />
         <div class="hidden @min-[1020px]:block">
@@ -150,11 +150,11 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <!-- Servicios legales -->
+    <!-- Gestoría -->
     <UPageSection
-      id="legal"
-      :description="page.legal.description"
-      :features="page.legal.features"
+      id="gestoria"
+      :description="page.agency.description"
+      :features="page.agency.features"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left'
@@ -165,7 +165,7 @@ useSeoMeta({
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
-          :value="page.legal.title"
+          :value="page.agency.title"
           class="*:leading-9"
         />
         <div class="hidden @min-[1020px]:block">
@@ -178,11 +178,11 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <!-- Servicios contables -->
+    <!-- Asesoría experta -->
     <UPageSection
-      id="accounting"
-      :description="page.accounting.description"
-      :features="page.accounting.features"
+      id="asesoria"
+      :description="page.consultancy.description"
+      :features="page.consultancy.features"
       :ui="{
         title: 'text-left @container relative flex',
         description: 'text-left'
@@ -193,7 +193,7 @@ useSeoMeta({
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
         <MDC
-          :value="page.accounting.title"
+          :value="page.consultancy.title"
           class="*:leading-9"
         />
         <div class="hidden @min-[1020px]:block">
@@ -206,9 +206,9 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <!-- Quiénes somos -->
+    <!-- Testimonios -->
     <UPageSection
-      id="testimonials"
+      id="clientes"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
       :items="page.testimonials.items"
@@ -227,15 +227,54 @@ useSeoMeta({
       <UContainer>
         <UPageColumns class="xl:columns-3">
           <UPageCard
-            v-for="(testimonial, index) in page.testimonials.items"
+            v-for="(client, index) in page.testimonials.items"
             :key="index"
             variant="subtle"
-            :description="testimonial.quote"
+            :description="client.quote"
             :ui="{ description: '' }"
           >
             <template #footer>
               <UUser
-                v-bind="testimonial.user"
+                v-bind="client.user"
+                size="xl"
+              />
+            </template>
+          </UPageCard>
+        </UPageColumns>
+      </UContainer>
+    </UPageSection>
+
+
+    <!-- Quiénes somos -->
+    <UPageSection
+      id="equipo"
+      :title="page.team.title"
+      :description="page.team.description"
+      :items="page.team.items"
+    >
+      <template #headline>
+        <UColorModeImage
+          light="/images/light/line-5.svg"
+          dark="/images/dark/line-5.svg"
+          class="absolute -top-10 sm:top-0 right-1/2 h-24"
+        />
+      </template>
+      <template #title>
+        <MDC :value="page.team.title" />
+      </template>
+
+      <UContainer>
+        <UPageColumns class="xl:columns-3">
+          <UPageCard
+            v-for="(member, index) in page.team.items"
+            :key="index"
+            variant="subtle"
+            :description="member.quote"
+            :ui="{ description: '' }"
+          >
+            <template #footer>
+              <UUser
+                v-bind="member.user"
                 size="xl"
               />
             </template>
@@ -248,6 +287,7 @@ useSeoMeta({
 
     <!-- Contáctanos -->
     <UPageCTA
+      id="contacto"  
       v-bind="page.cta"
       variant="naked"
       class="overflow-hidden @container"

@@ -3,34 +3,39 @@ const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
-  label: 'Mantenimiento',
-  to: '#maintenance',
-  active: activeHeadings.value.includes('maintenance')
+  label: 'Administración',
+  to: '#administracion',
+  active: activeHeadings.value.includes('administracion')
 }, {
-  label: 'Legal',
-  to: '#legal',
-  active: activeHeadings.value.includes('legal')
+  label: 'Gestoría',
+  to: '#gestoria',
+  active: activeHeadings.value.includes('gestoria')
 }, {
-  label: 'Contabilidad',
-  to: '#accounting',
-  active: activeHeadings.value.includes('accounting')
+  label: 'Asesoría experta',
+  to: '#asesoria',
+  active: activeHeadings.value.includes('asesoria')
+}, {
+  label: 'Testimonios',
+  to: '#clientes',
+  active: activeHeadings.value.includes('clientes')
 }, {
   label: 'Quiénes somos',
-  to: '#testimonials',
-  active: activeHeadings.value.includes('testimonials')
+  to: '#equipo',
+  active: activeHeadings.value.includes('equipo')
 }, {
   label: 'Contacto',
-  to: '#cta',
+  to: '#contacto',
   active: activeHeadings.value.includes('cta')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
-    document.querySelector('#maintenance'),
-    document.querySelector('#legal'),
-    document.querySelector('#accounting'),
-    document.querySelector('#testimonials'),
-    document.querySelector('#cta')
+    document.querySelector('#administracion'),
+    document.querySelector('#gestoria'),
+    document.querySelector('#asesoria'),
+    document.querySelector('#clientes'),
+    document.querySelector('#equipo'),
+    document.querySelector('#contacto')
   ].filter(Boolean) as Element[])
 })
 </script>

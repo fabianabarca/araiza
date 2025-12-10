@@ -45,13 +45,13 @@ export const collections = {
           })
         )
       }),
-      maintenance: createBaseSchema().extend({
+      administration: createBaseSchema().extend({
         features: z.array(createFeatureSchema())
       }),
-      legal: createBaseSchema().extend({
+      agency: createBaseSchema().extend({
         features: z.array(createFeatureSchema())
       }),
-      accounting: createBaseSchema().extend({
+      consultancy: createBaseSchema().extend({
         features: z.array(createFeatureSchema())
       }),
       steps: createBaseSchema().extend({
@@ -75,6 +75,22 @@ export const collections = {
         )
       }),
       testimonials: createBaseSchema().extend({
+        items: z.array(
+          z.object({
+            quote: z.string().nonempty(),
+            user: z.object({
+              name: z.string().nonempty(),
+              description: z.string().nonempty(),
+              to: z.string().nonempty(),
+              avatar: z.object({
+                src: z.string().editor({ input: 'media' }),
+                alt: z.string().optional()
+              }),
+              target: createEnum(['_blank', '_self'])
+            })
+          }))
+      }),
+      team: createBaseSchema().extend({
         items: z.array(
           z.object({
             quote: z.string().nonempty(),
