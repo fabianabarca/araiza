@@ -4,8 +4,28 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-studio'
   ],
+
+  studio: {
+    // Git repository configuration (owner and repo are required)
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'fabianabarca', // your GitHub/GitLab username or organization
+      repo: 'araiza', // your repository name
+      branch: 'main', // the branch to commit to (default: 'main')
+    }
+  },
+
+  nitro: {
+    prerender: {
+      // Pre-render the homepage
+      routes: ['/'],
+      // Then crawl all the links on the page
+      crawlLinks: true
+    }
+  },
 
   devtools: {
     enabled: true
