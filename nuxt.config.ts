@@ -20,10 +20,9 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      // Pre-render the homepage
       routes: ['/'],
-      // Then crawl all the links on the page
-      crawlLinks: true
+      crawlLinks: true,
+      concurrency: 1
     }
   },
 
@@ -41,14 +40,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ]
-    }
-  },
-
   eslint: {
     config: {
       stylistic: {
@@ -56,5 +47,30 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks: (id) => {
+            if (id.includes('node_modules')) {
+              if (id.includes('@nuxt') || id.includes('nuxt')) {
+                return 'vendor-nuxt'
+              }
+              if (id.includes('vue')) {
+                return 'vendor-vue'
+              }
+              return 'vendor'
+            }
+          }
+        }
+      }
+    }
+  },
+
+  typescript: {
+    typeCheck: false
   }
 })

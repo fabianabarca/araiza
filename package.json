@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "generate": "nuxt generate",
+    "build": "NODE_OPTIONS='--max-old-space-size=2048' nuxt build --no-fork-ts-checker",
+    "generate": "NODE_OPTIONS='--max-old-space-size=2048' nuxt generate --no-fork-ts-checker",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
