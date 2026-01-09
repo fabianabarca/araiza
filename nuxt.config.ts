@@ -10,6 +10,7 @@ export default defineNuxtConfig({
 
   studio: {
     // Git repository configuration (owner and repo are required)
+    dev: true,
     repository: {
       provider: 'github', // 'github' or 'gitlab'
       owner: 'fabianabarca', // your GitHub/GitLab username or organization
