@@ -9,13 +9,14 @@ export default defineNuxtConfig({
   ],
 
   studio: {
-    // Git repository configuration (owner and repo are required)
-    dev: true,
     repository: {
-      provider: 'github', // 'github' or 'gitlab'
-      owner: 'fabianabarca', // your GitHub/GitLab username or organization
-      repo: 'araiza', // your repository name
-      branch: 'main', // the branch to commit to (default: 'main')
+      provider: 'github', 
+      owner: 'fabianabarca', 
+      repo: 'araiza', 
+      branch: 'main', 
+    },
+    i18n: {
+      defaultLocale: 'es'
     }
   },
 
