@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Debug - Check secrets
+        run: |
+          echo "Host check: ${{ secrets.SERVER_HOST }}"
+          echo "Username check: ${{ secrets.SERVER_USERNAME }}"
+      
       - name: Deploy to server via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
