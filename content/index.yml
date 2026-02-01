@@ -1,55 +1,4 @@
-seo:
-  title: Araiza
-  description: Empresa especializada en la administración de condominios.
 title: Nosotros [resolvemos]{class="text-primary"}.
-description: Olvídate de los problemas con los expertos en administración a tu lado.
-hero:
-  links:
-    - label: Contáctanos
-      icon: i-lucide-arrow-down
-      trailing: true
-      color: primary
-      to: '#contacto'
-      size: xl
-    - label: Conoce más
-      icon: i-simple-icons-linkedin
-      size: xl
-      color: neutral
-      variant: outline
-      to: https://www.linkedin.com/company/administraciones-araiza/about/
-      target: _blank
-section:
-  title: 'Nos distinguimos por el [profesionalismo]{.text-primary}'
-  description: Somos una empresa especializada en la administración de condominios que se distingue por su trato personalizado, ética, responsabilidad, transparencia y, sobre todo, por ofrecer un servicio con los más altos estándares profesionales.
-  images:
-    mobile: '/images/building.jpg'
-    desktop: '/images/building.jpg'
-  features:
-    - title: Respaldo
-      description: Nos avalan todas las certificaciones de la Procuraduría Social (PROSOC). Pertenecemos a la Asociación Mexicana de Profesionales Inmobiliarios (AMPI). Contamos con cédulas profesionales jurídicas para ofrecer la mejor asesoría legal sin un costo adicional.
-      class: border-l border-primary pl-4
-    - title: Experiencia
-      description: En la Ciudad de México administramos una docena de condominios de vivienda y de uso mixto, con distintos números de unidades privativas, en las colonias Cuauhtémoc, Condesa, Coyoacán, San Jerónimo, Del Valle, Olivar de lo Padres, entre otras.
-      class: border-l border-default pt-4 pl-4
-steps:
-  title: Administración eficiente en [tres pasos]{.text-primary}
-  description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
-  items:
-    - title: Diagnóstico
-      description: Plan de organización anual y planes estratégicos.
-      image:
-        light: '/images/light/diagnostico.jpg'
-        dark: '/images/light/diagnostico.jpg'
-    - title: Ejecución
-      description: Rendición de cuentas a través de estados de resultados y matriz de cumplimiento mensual.
-      image:
-        light: '/images/light/ejecucion.jpg'
-        dark: '/images/light/ejecucion.jpg'
-    - title: Evaluación
-      description: Transparencia total y garantías en la calidad del servicio.
-      image:
-        light: '/images/light/evaluacion.jpg'
-        dark: '/images/light/evaluacion.jpg'
 administration:
   title: Servicios de [administración]{.text-primary}
   description: Contamos con el respaldo de empresas profesionales con la experiencia necesaria para afrontar las necesidades de nuestros clientes.
@@ -97,6 +46,40 @@ consultancy:
       icon: i-lucide-hand-coins
       ui:
         leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+cta:
+  title: Contáctanos, estamos para servirte.
+  description: ¡Agenda tu cita de evaluación sin costo y sin compromiso!
+  links:
+    - label: (+52) 55 2935 7345
+      to: tel:+525529357345
+      target: _blank
+      icon: i-lucide-phone
+    - label: (+52) 55 1834 5558
+      to: tel:+525518345558
+      target: _blank
+      variant: subtle
+      icon: i-lucide-phone
+    - label: info@administracionesaraiza.com.mx
+      to: mailto:info@administracionesaraiza.com.mx
+      target: _blank
+      variant: subtle
+      icon: i-lucide-mail
+description: Olvídate de los problemas con los expertos en administración a tu lado.
+hero:
+  links:
+    - label: Contáctanos
+      icon: i-lucide-arrow-down
+      trailing: true
+      color: primary
+      to: "#contacto"
+      size: xl
+    - label: Conoce más
+      icon: i-simple-icons-linkedin
+      size: xl
+      color: neutral
+      variant: outline
+      to: https://www.linkedin.com/company/administraciones-araiza/about/
+      target: _blank
 pricing:
   title: Choose your [productivity]{.text-primary} path
   description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
@@ -115,7 +98,7 @@ pricing:
         label: Buy now
         color: neutral
         variant: outline
-        to: '#'
+        to: "#"
     - title: Team Developer
       description: For bootstrappers and indie hackers.
       price: $199
@@ -129,63 +112,80 @@ pricing:
       button:
         label: Buy now
         variant: subtle
-        to: '#'
-testimonials:
-  title: Nuestros [clientes]{.text-primary}
-  description: Contamos con un equipo de profesionistas y profesionales con amplia experiencia en el ramo.
+        to: "#"
+section:
+  title: Nos distinguimos por el [profesionalismo]{.text-primary}
+  description: Somos una empresa especializada en la administración de condominios que se distingue por su trato personalizado, ética, responsabilidad, transparencia y, sobre todo, por ofrecer un servicio con los más altos estándares profesionales.
+  images:
+    mobile: /images/building.jpg
+    desktop: /images/building.jpg
+  features:
+    - title: Respaldo
+      description: Nos avalan todas las certificaciones de la Procuraduría Social (PROSOC). Pertenecemos a la Asociación Mexicana de Profesionales Inmobiliarios (AMPI). Contamos con cédulas profesionales jurídicas para ofrecer la mejor asesoría legal sin un costo adicional.
+      class: border-l border-primary pl-4
+    - title: Experiencia
+      description: En la Ciudad de México administramos una docena de condominios de vivienda y de uso mixto, con distintos números de unidades privativas, en las colonias Cuauhtémoc, Condesa, Coyoacán, San Jerónimo, Del Valle, Olivar de lo Padres, entre otras.
+      class: border-l border-default pt-4 pl-4
+seo:
+  title: Araiza
+  description: Empresa especializada en la administración de condominios.
+steps:
+  title: Administración eficiente en [tres pasos]{.text-primary}
+  description: Brindamos a nuestros clientes información clara, oportuna y disponible en todo momento.
   items:
-    - quote: Araiza nos ha dado orden, claridad y tranquilidad. La atención es rápida, profesional y siempre transparente. Estamos muy satisfechos con su trabajo.
-      user:
-        name: 'Cliente en edificio residencial'
-        description: 'Colonia Condesa, CDMX'
-    - quote: 'Su experiencia y organización hacen toda la diferencia. Las cuentas son claras, la comunicación excelente y la operación impecable. Totalmente recomendados.'
-      user:
-        name: 'Cliente en edificio mixto'
-        description:  'Coyoacán, CDMX'
-    - quote: Gracias a Araiza nuestra plaza funciona sin problemas. Son eficientes, atentos y muy profesionales. Superan consistentemente nuestras expectativas.
-      user:
-        name: 'Cliente en plaza comercial'
-        description:  'Santa Fe, CDMX'
+    - title: Diagnóstico
+      description: Plan de organización anual y planes estratégicos.
+      image:
+        light: /images/light/diagnostico.jpg
+        dark: /images/light/diagnostico.jpg
+    - title: Ejecución
+      description: Rendición de cuentas a través de estados de resultados y matriz de cumplimiento mensual.
+      image:
+        light: /images/light/ejecucion.jpg
+        dark: /images/light/ejecucion.jpg
+    - title: Evaluación
+      description: Transparencia total y garantías en la calidad del servicio.
+      image:
+        light: /images/light/evaluacion.jpg
+        dark: /images/light/evaluacion.jpg
 team:
   title: Quiénes [somos]{.text-primary}
   description: Contamos con un equipo de profesionistas y profesionales con amplia experiencia en el ramo.
   items:
     - quote: Los más de 35 años de experiencia de Emilia en el sector administrativo y legal han permitido la consolidación de Administraciones Araiza como una empresa referente en el mercado.
       user:
-        name: 'Emilia Araiza'
-        description: 'Socia fundadora'
+        name: Emilia Araiza
+        description: Socia fundadora
         target: _blank
         avatar:
-          src: '/images/emilia.jpg'
-    - quote: 'Los conocimientos jurídicos y tecnológicos de Pablo han ayudado a consolidar la compañía con una visión de vanguardia.'
+          src: /images/emilia.jpg
+    - quote: Los conocimientos jurídicos y tecnológicos de Pablo han ayudado a consolidar la compañía con una visión de vanguardia.
       user:
-        name: 'Pablo Berthely'
-        description:  'Socio'
+        name: Pablo Berthely
+        description: Socio
         target: _blank
         avatar:
-          src: '/images/pablo.png'
-    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
+          src: /images/pablo.png
+    - quote: Abogada especializada en gestión de los recursos humanos al servicio de la gestión de su condominio.
       user:
-        name: 'Sofía Abarca'
-        description:  'Colaboradora'
+        name: Sofía Abarca
+        description: Colaboradora
         target: _blank
         avatar:
-          src: '/images/sofia.jpeg'
-cta:
-  title: Contáctanos, estamos para servirte.
-  description: ¡Agenda tu cita de evaluación sin costo y sin compromiso!
-  links:
-    - label: "(+52) 55 2935 7345"
-      to: 'tel:+525529357345'
-      target: _blank
-      icon: i-lucide-phone
-    - label: "(+52) 55 1834 5558"
-      to: 'tel:+525518345558'
-      target: _blank
-      variant: subtle
-      icon: i-lucide-phone
-    - label: info@administracionesaraiza.com.mx
-      to: 'mailto:info@administracionesaraiza.com.mx'
-      target: _blank
-      variant: subtle
-      icon: i-lucide-mail
+          src: /images/sofia.jpeg
+testimonials:
+  title: Nuestros [clientes]{.text-primary}
+  description: Contamos con un equipo de profesionistas y profesionales con amplia experiencia en el ramo.
+  items:
+    - quote: Araiza nos ha dado orden, claridad y tranquilidad. La atención es rápida, profesional y siempre transparente. Estamos muy satisfechos con su trabajo.
+      user:
+        name: Cliente en edificio residencial
+        description: Colonia Condesa, CDMX
+    - quote: Su experiencia y organización hacen toda la diferencia. Las cuentas son claras, la comunicación excelente y la operación impecable. Totalmente recomendados.
+      user:
+        name: Cliente en edificio mixto
+        description: Coyoacán, CDMX
+    - quote: Gracias a Araiza nuestra plaza funciona sin problemas. Son eficientes, atentos y muy profesionales. Superan consistentemente nuestras expectativas.
+      user:
+        name: Cliente en plaza comercial
+        description: Santa Fe, CDMX
