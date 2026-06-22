@@ -1,0 +1,35 @@
+# Administraciones Araiza — Nuxt (Nitro) SSR app served through the existing Traefik proxy.
+# Built from the multi-stage Dockerfile; runs the Nitro server on port 3000.
+# Traefik terminates TLS on :443 (websecure) and routes by hostname.
+
+services:
+  araiza:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: araiza-web
+    container_name: araiza-web
+    restart: unless-stopped
+    # nuxt-studio GitHub OAuth credentials (kept out of the image).
+    env_file:
+      - .env
+    networks:
+      - traefik_proxy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.araiza.rule=Host(`administracionesaraiza.com.mx`)"
+      - "traefik.http.routers.araiza.entrypoints=websecure"
+      - "traefik.http.routers.araiza.tls=true"
+      - "traefik.http.routers.araiza.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.araiza.middlewares=security-headers@file,compression@file"
+      - "traefik.http.services.araiza.loadbalancer.server.port=3000"
+
+networks:
+  traefik_proxy:
+    external: true

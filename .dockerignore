@@ -1,0 +1,34 @@
+# Rebuilt inside the image
+node_modules
+.output
+.nuxt
+.nitro
+.cache
+dist
+
+# Dev-only data (content DB is regenerated at build time)
+.data
+
+# VCS / tooling
+.git
+.gitignore
+.history
+.idea
+.fleet
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Secrets are injected at runtime via env_file, never baked into the image
+.env
+.env.*
+
+# Not needed in the build context
+Dockerfile
+.dockerignore
+compose.yaml
+docker-compose.yml
+README.md
+FEEDBACK.md
